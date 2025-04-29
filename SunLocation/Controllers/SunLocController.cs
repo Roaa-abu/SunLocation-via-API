@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using SunLocation.Domains;
 
 namespace SunLocation.Controllers
 {
@@ -22,6 +23,7 @@ namespace SunLocation.Controllers
         [HttpPost]
         public IActionResult GetSunData(string Latitude, string Longitude)
         {
+            LocationInfo locationInfo = new LocationInfo();
             string response = string.Empty;
             if (Latitude != null && Longitude != null)
             {
@@ -33,6 +35,10 @@ namespace SunLocation.Controllers
 
             string? status = root.GetProperty("status").GetString();
             string? formatted = root.GetProperty("formatted").GetString();
+            string? countryName = root.GetProperty("countryName").GetString();
+            string? regionName = root.GetProperty("regionName").GetString();
+            locationInfo.countryName = countryName;
+            locationInfo.regionName = regionName;
             string sunSrc = "";
             if (formatted != null)
             {
@@ -42,6 +48,7 @@ namespace SunLocation.Controllers
                 int hour = int.Parse(time[0]);
                 int minute = int.Parse(time[1]);
                 int second = int.Parse(time[2]);
+                locationInfo.time = $"{hour}:{minute}:{second}";
                 if (hour == 5 && minute >= 50)
                     sunSrc = "/img/sunrise.png";
                 else if (hour == 19 && minute >= 10)
@@ -61,14 +68,15 @@ namespace SunLocation.Controllers
                 View("SunLoc");
             }
             ViewBag.SunImagePath = sunSrc;
-            return View("ViewResponse");
-             //          ViewResponse
+            return View("ViewResponse", locationInfo);
+             
         }
         [HttpGet]
         public IActionResult ViewResponse()
         {
             ViewBag.SunImagePath = "/img/night.png";
-            return View();
+            LocationInfo locationInfo = new LocationInfo();
+            return View(locationInfo);
         }
     }
 }

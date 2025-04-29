@@ -1,10 +1,17 @@
-﻿@{
+﻿@using SunLocation.Domains;
+@{
     ViewData["Title"] = "View Sun Page";
 }
-
+@model LocationInfo;
 <div class="container">
     <h1>Sun Location</h1>
-    <p>Here is the image of the sun location:</p>
+    <p>Here is the image of the sun location and some detaills:</p>
+    @if (Model.time != "" && Model.countryName!="" && Model.regionName!="")
+    {
+        <p>Sun time: @Model.time</p>
+        <p>Country: @Model.countryName</p>
+        <p>Region: @Model.regionName</p>
+    }
 
     <img src="@ViewBag.SunImagePath" class="img-fluid" alt="Sun time image">
 </div>

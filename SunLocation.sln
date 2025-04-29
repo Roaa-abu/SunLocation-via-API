@@ -4,6 +4,8 @@ VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunLocation", "SunLocation\SunLocation.csproj", "{CF5D1225-E4DE-41E6-B25A-A842051E08C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domains", "Domains\Domains.csproj", "{8387BB9E-9569-4DD8-BFB3-7ABEF6B2EE79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{CF5D1225-E4DE-41E6-B25A-A842051E08C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF5D1225-E4DE-41E6-B25A-A842051E08C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF5D1225-E4DE-41E6-B25A-A842051E08C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8387BB9E-9569-4DD8-BFB3-7ABEF6B2EE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8387BB9E-9569-4DD8-BFB3-7ABEF6B2EE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8387BB9E-9569-4DD8-BFB3-7ABEF6B2EE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8387BB9E-9569-4DD8-BFB3-7ABEF6B2EE79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

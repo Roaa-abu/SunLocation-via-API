@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "SunLocation/1.0.0": {
+        "dependencies": {
+          "Domains": "1.0.0"
+        },
         "runtime": {
           "SunLocation.dll": {}
+        }
+      },
+      "Domains/1.0.0": {
+        "runtime": {
+          "Domains.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "SunLocation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domains/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

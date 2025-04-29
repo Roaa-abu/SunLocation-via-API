@@ -67,3 +67,7 @@ C:\Users\user\source\repos\SunLocation-via-API\SunLocation\obj\Debug\net8.0\refi
 C:\Users\user\source\repos\SunLocation-via-API\SunLocation\obj\Debug\net8.0\SunLocation.pdb
 C:\Users\user\source\repos\SunLocation-via-API\SunLocation\obj\Debug\net8.0\SunLocation.genruntimeconfig.cache
 C:\Users\user\source\repos\SunLocation-via-API\SunLocation\obj\Debug\net8.0\ref\SunLocation.dll
+C:\Users\user\source\repos\SunLocation-via-API\SunLocation\bin\Debug\net8.0\Domains.dll
+C:\Users\user\source\repos\SunLocation-via-API\SunLocation\bin\Debug\net8.0\Domains.pdb
+C:\Users\user\source\repos\SunLocation-via-API\SunLocation\obj\Debug\net8.0\SunLocation.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\SunLocation-via-API\SunLocation\obj\Debug\net8.0\SunLocat.820C378A.Up2Date
