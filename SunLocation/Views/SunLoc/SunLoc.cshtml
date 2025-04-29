@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Get Sun Location";
+}
+<form asp-controller="SunLoc" asp-action="GetSunData">
+    <div class="form-group">
+        <label for="formGroupExampleInput">Latitude</label>
+        <input required type="text" class="form-control" id="Latitude" name="Latitude" placeholder="Enter Latitude">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Longitude</label>
+        <input required type="text" class="form-control" id="Longitude" name="Longitude" placeholder="Enter Longitude">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
